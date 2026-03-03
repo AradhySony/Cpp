@@ -3,17 +3,11 @@ using namespace std;
 
 int main() {
     int n;
-    cout << "Enter number of terms: ";
-    cin >> n;
-
-    int a = 0, b = 1, next;
-
-    for(int i = 1; i <= n; i++) {
-        cout << a << " ";
-        next = a + b;
-        a = b;
-        b = next;
+    cout<<"enter number to print table of :"<<endl;
+    cin>>n;
+    for (int i = 1; i <= 10; i++)
+    {
+        cout<<n<<"X"<<i<<"="<<n*i<<endl;
     }
-
     return 0;
 }
